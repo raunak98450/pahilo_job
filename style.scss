@@ -1,0 +1,281 @@
+.nav {
+  ul {
+    list-style: none;
+    li {
+      display: inline;
+      a {
+        text-transform: uppercase;
+        color: #0f0f0f;
+        text-decoration: none;
+        padding: 19px;
+      }
+    }
+  }
+}
+ul {
+  list-style: none;
+}
+.light-green{
+   background: #e6f6ec;
+      border: 1px solid #e6f6ec;
+      border-radius: 27px;
+}
+.active {
+  color: #1bade7 !important;
+}
+
+.avatar-login{
+  
+    // vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  
+}
+section {
+  &.search-bar-custom {
+    background: #e6f6ec;
+    height: 40vh;
+    .containerr {
+      .find-jobs {
+        background-color: #ffffff;
+        border: 20px solid#ffffff;
+        .input-group {
+          margin-right: 5rem;
+        }
+        .dropdown {
+          margin-right: 5rem;
+        }
+        span {
+          background: none;
+        }
+        input[type="search"] {
+          border: none;
+        }
+        input[type="search"]:focus,
+        button:focus {
+          box-shadow: none;
+          outline: 0 none;
+        }
+      }
+    }
+  }
+  &.type-of-employment {
+    .employment-options {
+      background: #e6f6ec;
+    }
+  }
+  &.search-results {
+    .top-most {
+      border: 1px solid #cccccc;
+      border-radius: 20px;
+    }
+  }
+  &.footer {
+    background: #e6f6ec;
+  }
+  &.copyright {
+    background: #fedb8e;
+    i {
+      cursor: pointer;
+      font-size: 1.35rem !important;
+    }
+  }
+  &.profile-picture {
+    position: relative;
+    .container {
+      .bg-img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        opacity: 0.3;
+      }
+      .avatar {
+        
+        &-img{
+          position: absolute;
+          top: 50%;
+          // right: 50%;
+          width: 120px;
+          height: 120px;
+          border-radius: 50%;
+          z-index: 55;
+        }
+        &-description {
+          position: absolute;
+          top: 82%;
+        }
+      }
+    }
+
+  }
+  &.about-candidate{
+    .candidate-information{
+      background: #fedb8e;
+      border: 1px solid #fedb8e;
+      border-radius: 25px;
+    }
+  }
+  &.candidate-skills{
+  
+    .work-experience{
+
+    }
+  }
+  &.company-list{
+    .company-description{
+      border: 1px solid #b3b9bb;
+      border-radius: 30px;
+    }
+  }
+  &.roadmap{
+    .explore-more{
+      color: #337ab7;
+    }
+  }
+}
+@font-face {
+  font-family: 'AdiHaus';
+  src: url('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  border-style: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+:root {
+  --theme-color-black: #333333; /* rgba(51, 51, 51, 1) */
+  --theme-color-brown: #423A3A; 
+  --theme-color-red: #CD3A24;
+  --theme-color-white: #FEFFFF; /* rgba(254, 255, 255, 1) */
+}
+
+/* ---------- MAIN BODY DECLERATIONS ---------- */
+
+
+input {
+  font-family: 'AdiHaus';
+}
+
+.mobile-container {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+.hero-image-desktop {
+  display: none;
+}
+
+/* ---------- HERO BANNER DECLERATIONS ---------- */
+.hero-banner {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-banner .logo-wrapper {
+  height: auto;
+  margin: 0 auto;
+  padding: 1rem 0;
+  width: auto;
+}
+  
+  .logo-wrapper img {
+      display: block;
+      height: 2.5rem;
+      margin: 0 auto;
+      width: auto;
+  }
+
+.hero-banner .hero-image {
+  background-image: url(https://assets.codepen.io/6060109/athlete-girl.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 376px;
+  width: 100%;
+}
+
+/* ---------- TEXT INFO DECLERATIONS ---------- */
+.text-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+  .text-info > * {
+      padding: 0 2.5rem 1rem;
+  }
+
+  /* intended for the first h2 within .text-info */
+  .text-info h2:nth-child(1) {
+      color: var(--theme-color-red);
+      font-weight: normal;
+      padding-top: 1.8rem;
+      padding-bottom: 1rem;
+  }
+
+  .text-info h2 {
+      font-size: 3.5rem;
+      font-weight: bold;
+      color: var(--theme-color-brown);
+      letter-spacing: 5px;
+      text-transform: uppercase;
+  }
+
+  .text-info p {
+      color: var(--theme-color-black);
+      line-height: 24px;
+  }
+
+  .text-info .email-signup {
+      margin: 1rem 0 6rem;
+      position: relative;
+      width: 100%;
+  }
+  
+      .email-signup .email-input {
+          border: 1px solid rgba(51, 51, 51, .7);
+          border-radius: 3px;
+          padding: 1rem 1.5rem;
+          opacity: .5;
+          width: 100%;
+      }
+
+      .email-signup .email-input:focus {
+          background-color: var(--theme-color-white);
+          outline: 2px solid var(--theme-color-black);
+          opacity: 1;
+      }
+
+      .email-signup .email-submit {
+          background-color: var(--theme-color-black);
+          border-bottom: 1px solid var(--theme-color-black);
+          border-radius: 2px;
+          color: var(--theme-color-white);
+          cursor: pointer;
+          font-weight: bold;
+          opacity: 1;
+          padding: 1rem 1.5rem;
+          position: absolute;
+          right: 0;
+          margin-right: 2.5rem;
+          z-index: 10;
+      }
